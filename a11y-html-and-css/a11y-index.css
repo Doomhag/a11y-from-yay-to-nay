@@ -1,0 +1,178 @@
+/* sorry - the css is messy here! Fixed on the go and no planned design It's not supposed to inspire for reuse. only the HTML*/
+html {
+    position: absolute;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    font-family: "Tidenes Sans Regular", "Lato", sans-serif, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: auto;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    background-color: #4c4b4b;
+    color: white;
+}
+
+header nav ul li {
+    line-height: 40px;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+
+header a {
+    color: white;
+}
+
+main {
+    margin-top: 80px;
+    border: 1px solid black;
+    width: 100%;
+    background-color: #fbaaaa;
+}
+
+h1, h2, h3, h4, h5, p, a {
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+    padding: 0 12px;
+}
+h1, h2, h3, h4, h5 {
+    padding-top: 22px;
+    padding-bottom: 12px;
+}
+p {
+    padding-top: 6px;
+    padding-bottom: 22px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+.greenBck {
+    background-color: #96e090;
+}
+
+article {
+    margin: 28px 0;
+    border-top: 1px solid darkgray;
+}
+
+details, summary {
+    position: relative;
+}
+details {
+    margin: 1px 0;
+}
+summary {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+summary:hover {
+    cursor: pointer;
+}
+
+details summary::-webkit-details-marker {
+    color: black;
+    position: absolute;
+    right: 25px;
+    top: 0.5em;
+    font-size: 200%;
+}
+
+.image-leftside {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    min-height: 150px;
+}
+
+.image-leftside img,
+.image-rightside img  {
+    position: absolute;
+    width: 200px;
+    top: 20px;
+    max-height: 150px;
+    object-fit: cover;
+    padding: 0 12px;
+}
+
+.image-leftside img {
+    left: 0;
+    border-right: 1px solid black;
+    padding-right: 0;
+}
+
+.image-rightside img {
+    right: 0;
+    padding-left: 0;
+    border-left: 1px solid black;
+}
+
+
+
+.image-leftside p,
+.image-leftside h1,
+.image-leftside h2,
+.image-leftside h3,
+.image-leftside h4,
+.image-leftside h5 {
+    text-align: left;
+    margin-left: 250px;
+}
+
+.image-rightside {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    min-height: 150px;
+}
+
+.image-rightside p,
+.image-rightside h1,
+.image-rightside h2,
+.image-rightside h3,
+.image-rightside h4,
+.image-rightside h5 {
+    text-align: left;
+    margin-right: 250px;
+}
+
+
+.focusable-shortcut {
+    position: absolute;
+    left: -10000px;
+}
+
+.focusable-shortcut:focus {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 1.4em;
+    background-color: #4c4b4b;
+    padding: 12px;
+}
+
+a.intext-link {
+    color: inherit;
+    padding: 20px;
+    display: block;
+}

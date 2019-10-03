@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A11y purely in HTML</title>
+    <link rel="stylesheet" type="text/css" href="a11y-index.css">
+</head>
+<body>
+    <header>
+        <a class="focusable-shortcut" href="#mainContent">Go to main content</a>
+        <nav>
+            <ul>
+                <li><a href="#whyAccessible">Why accessible?</a></li>
+                <li><a href="#codeExamples">Examples</a></li>
+                <li><a href="#guidelines">Guidelines</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="mainContent">
+        <section class="image-leftside">
+            <h1>A11y purely for your html</h1>
+            <p>
+                Okey so let's get started with some a11y.
+                a11y is a numeronym for accessibility and is massively part of a UX-designers work.
+                However a designers great work could be useless if the code doesn't do what it's supposed to.
+                The content on this page will have CSS to make pretty - but we'll focus on the HTML basic for you developers.
+            </p>
+            <!-- alt-texts are needed on img tags for screen readers and should describe content of the image. -->
+            <img src="a11yproject-logo-1.png" alt="Logo for the a11y project. Hollow person icon with the text The a11y project" />
+        </section>
+
+        <article class="greenBck" id="whyAccessible">
+            <div class="image-rightside">
+                <h2>Why accessible?</h2>
+                <p>
+                    Okey so the boring answer is: <em>because you're not a terrible person</em>.
+                    <br>
+                    Accessibility is useful for most people, and absolutely neccessary for others.
+                    <br>
+                    According to that it is bound by discrimation-laws in most countries.
+                </p>
+                <img src="accessible-users.jpeg" alt="different looking people going through the same door" />
+            </div>
+
+            <details>
+            <summary><h3>Business point of view</h3></summary>
+            <p>
+                <b>Accessibility is cash!</b> If you run a business you cannot avoid this.
+                <br>
+                A badly coded website could look as pretty as it wants - but if a user cannot get what they came for it's pointless.
+                We code with a11y in mind - so users with assistive technologies, or invisible disabilities could use the website with ease.
+                <br>
+                Oh yeah - also it also flies well with google and other search engines!
+            </p>
+            </details>
+            <details>
+                <summary><h3>Users point of view</h3></summary>
+            <p>
+                <b>Every user benefits from this!</b> Simply because the guidelines makes the content better.
+                <br>
+                Some guidelines to follow are based on mobile-friendly functions, contrasting for screens in sunlight, and not forcing the user to remember or hurry.
+                All in all that makes a website more manageable without timepressure and poorly designed content.
+            </p>
+            </details>
+            <details>
+                <summary><h3>Developers point of view</h3></summary>
+            <p>
+                It makes you aware of what you're coding, and it also makes the next person more likely to understand what you are coding!
+                <br>
+                What you use for accessibility is as a beginning clean code. Limit your divs, and make the code be what it is supposed to be.
+                It's easy to use the "wrong element" because it demands less fixing in style - but you create code that is hard tpo understand later on.
+            </p>
+            </details>
+        </article>
+
+        <section id="codeExamples">
+            <h2>Examples</h2>
+            <p>
+                Let us see some examples of accessible HTML!
+                <br>
+                To be inserted <3
+            </p>
+        </section>
+
+        <section class="greenBck" id="guidelines">
+            <h2>Guidelines</h2>
+            <p>
+                You should know about and follow
+                <abbr title="Web Content Accessibility Guidelines" aria-label="Web Content Accessibility Guidelines">WCAG</abbr>
+                <br>
+                The newest version is 2.1 and you should follow this to a minimum of AA standard.
+                This is regulated by law in most EU countries - and probably other countries as well.
+            </p>
+            <a class="intext-link" href="https://www.w3.org/TR/WCAG21/">Follow this link to find the guidelines</a>
+        </section>
+    </main>
+</body>
+</html>
