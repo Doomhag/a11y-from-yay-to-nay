@@ -26,7 +26,7 @@
                 The content on this page will have CSS to make pretty - but we'll focus on the HTML basic for you developers.
             </p>
             <!-- alt-texts are needed on img tags for screen readers and should describe content of the image. -->
-            <img src="a11yproject-logo-1.png" alt="Logo for the a11y project. Hollow person icon with the text The a11y project" />
+            <img src="img/a11yproject-logo-1.png" alt="Logo for the a11y project. Hollow person icon with the text The a11y project" />
         </section>
 
         <article class="greenBck" id="whyAccessible">
@@ -39,7 +39,7 @@
                     <br>
                     According to that it is bound by discrimation-laws in most countries.
                 </p>
-                <img src="accessible-users.jpeg" alt="different looking people going through the same door" />
+                <img src="img/accessible-users.jpeg" alt="different looking people going through the same door" />
             </div>
 
             <details>
@@ -75,11 +75,23 @@
 
         <section id="codeExamples">
             <h2>Examples</h2>
-            <p>
-                Let us see some examples of accessible HTML!
-                <br>
-                To be inserted <3
-            </p>
+            <article class="the-max-width flex-box">
+                <h3>Header levels</h3>
+                <p>So first of all - you should use header elements in a programmatical order. Not based on the size they come out in. You could easily fix that with adding the size-styling on a class.</p>
+                <img class="half-width" src="img/code1-bad-example.png" alt="a bad code example where a h4 follows directly after a h1 element" />
+                <img class="half-width" src="img/code11-good-example.png" alt="a imrpoved code example where following the h1 is a h2 element with a class to make it smaller" />
+                <p>This way you can insert the correct header for it to make sense - and getting the look you want. Bootstrap and other styling libraries made us a bit lazy on this.</p>
+
+                <h4>Why?</h4>
+                <p>
+                    There are many reasons why you should do this. It validates your code properly - and it indicates which text belongs to which headers.
+                    If you have a lot of headers nested and the header-levels doesn't make sense, you cannot programmaticly determine which headers are connected and not.
+                </p>
+                <p>
+                    Assistive technologies like screen readers often browse by headers on many websites. By coding them in nested levels they know which to easily skip because they belong together and not.
+                </p>
+                <img class="img-own-line-short" src="img/screen-reader-headings.png" alt="An example from the headers menu overview from VoiceOver screen reader for Mac" />
+            </article>
         </section>
 
         <section class="greenBck" id="guidelines">

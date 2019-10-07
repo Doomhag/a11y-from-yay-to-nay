@@ -23,8 +23,9 @@ header {
     top: 0;
     width: 100vw;
     height: 80px;
-    background-color: #4c4b4b;
-    color: white;
+    background-color: #3c3c3c;;
+    color: #d0d0d0;
+    box-shadow: 1px 2px 4px #3c3c3c;
 }
 
 header nav ul li {
@@ -42,7 +43,13 @@ main {
     margin-top: 80px;
     border: 1px solid black;
     width: 100%;
-    background-color: #fbaaaa;
+    background-color: #d0d0d0;
+    color: #3c3c3c;
+}
+
+.the-max-width {
+    max-width: 1200px;
+    margin: auto;
 }
 
 h1, h2, h3, h4, h5, p, a {
@@ -66,7 +73,8 @@ ul {
 }
 
 .greenBck {
-    background-color: #96e090;
+    background-color: #3c3c3c;
+    color: #d0d0d0;
 }
 
 article {
@@ -175,4 +183,29 @@ a.intext-link {
     color: inherit;
     padding: 20px;
     display: block;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-box h2,
+.flex-box h3,
+.flex-box h4,
+.flex-box p {
+    width: 100%;
+}
+
+.half-width {
+    display: flex;
+    max-width: 50%;
+    padding: 2px;
+}
+
+.img-own-line-short {
+    width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    margin-bottom: 20px;
 }
